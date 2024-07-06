@@ -18,8 +18,5 @@
                 "main.css"
             ]
         }
-    ],
-    "permissions": [
-        "activeTab"
     ]
 }
