@@ -1,0 +1,23 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "env.d.ts",
+    "content/**/*",
+    "content/**/*.vue"
+  ],
+  "exclude": [
+    "content/**/__tests__/*"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@content/*": [
+        "./content/*"
+      ]
+    }
+  }
+}

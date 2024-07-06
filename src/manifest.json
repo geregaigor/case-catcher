@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Case catcher",
+    "description": "This extension catches the case",
+    "version": "1.1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://172.1.4.153/*",
+                "http://172.1.4.155/*",
+                "http://172.1.4.158/*",
+                "https://localhost:7174/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "main.css"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
